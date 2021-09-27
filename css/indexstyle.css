@@ -22,23 +22,34 @@ html{
     margin: 0;
 }
 
+#switcher{
+    position: fixed;
+}
+
 .page{
     height: 100vh;
     background-color: var(--bg-color);
     color: var(--text-color);
+    display: flex;
 }
 
 #landing{
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+}
+
+#second{
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
 
 .box{
     padding: 2rem;
     border-radius: 10px;
     background-color: var(--acc-color);
+    box-shadow: 5px 5px 5px var(--acc-color-dark);
 }
 
 .theme {
