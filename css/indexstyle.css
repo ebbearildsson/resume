@@ -68,20 +68,10 @@ a:hover {
     transition: 0.5s;
 }
 
-#switcher {
-    margin-top: 50vh;
+.switcher {
     display: flex;
     justify-content: space-evenly;
 }
-
-
-
-
-
-
-
-
-
 
 .page {
     height: 100vh;
@@ -111,6 +101,7 @@ a:hover {
 }
 
 .theme {
+    margin-top: 50vh;
     width: 2rem;
     height: 2rem;
     margin: 10px;
@@ -126,4 +117,26 @@ a:hover {
 .darkbtn {
     background-color: #FEC260;
     border: 5px solid #3B185F;
+}
+
+.lang {
+    width: 2rem;
+    height: 1rem;
+    margin: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.svbtn {
+    background-color: #FECC00;
+    border: 5px solid #006AA7;
+}
+
+.enbtn {
+    background-color: #C8102E;
+    border: 5px solid #012169;
+}
+
+.sv {
+    display: none;
 }

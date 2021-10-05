@@ -8,23 +8,33 @@
     <script src="js/indexcode.js"></script>
     <title>Min sida</title>
 </head>
-<body>
+<body onload="setTheme('light')">
     <div id="sidebar">
-        <a href="" class="contentlink">Something</a>
-        <a href="" class="contentlink">Something</a>
-        <a href="" class="contentlink">Something</a>
-        <a href="" class="contentlink">Something</a>
-        <a href="" class="contentlink">Something</a>
+        <a href="" class="contentlink">
+            <span class="en">TODO</span>
+            <span class="sv">Att Göra</span>
+        </a>
+        <a href="" class="contentlink">Completed things</a>
+        <a href="" class="contentlink">Writings</a>
+        <a href="" class="contentlink">Programs</a>
+        <a href="" class="contentlink">
+            <span class="en">About me</span>
+            <span class="sv">Om mig</span>
+        </a>
         <div id="switcher">
             <button class="theme lightbtn" onclick="setTheme('light')"></button>
             <button class="theme darkbtn" onclick="setTheme('dark')"></button>
+        </div>
+        <div class="switcher">
+            <button class="lang svbtn" onclick="setLang('sv')"></button>
+            <button class="lang enbtn" onclick="setLang('en')"></button>
         </div>
     </div>
     <div id="btn" onclick="setsidebar()"><a id="btntext" href="javascript:void(0)">+</a></div>  
     <div class="page" id="landing">
         <div class="box">
-            <span lang="se">Välkommen!</span>
-            <span lang="en">Welcome!</span>
+            <span class="en">Welcome!</span>
+            <span class="sv">Välkommen!</span>
         </div>
     </div>
     <div class="page" id="second">
