@@ -1,9 +1,11 @@
 import App from './App.svelte';
 
+let website_name = 'Pear';
+
 const app = new App({
 	target: document.body,
 	props: {
-		name: 'resume',
+		name: website_name,
 	}
 });
 
