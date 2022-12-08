@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+
+body {
+  font-family: 'Fira Code', monospace;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.list {
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.list>a {
+  text-decoration: none;
+  color: #212121;
+  font-size: 2em;
+  position: relative;
+}
+
+.list>a:hover::before {
+  position: absolute;
+  content:'[';
+  left: -1rem;
+}
+
+.list>a:hover::after {
+  content:']';
+}
+
+.typed {
+  margin-left: 5vw;
+  font-size: 4em;
+	width: 14ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #fff;
+	animation: cursor 1s step-start infinite, text 5s steps(15) alternate;
+}
+
+@keyframes cursor {
+	0% {
+    border-color: #212121;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% { 
+    border-color: #212121; 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 15ch; 
+  }
+}
+
+#sketch {
+  position: absolute;
+  top: 50vh;
+  height: 50vh;
+}
