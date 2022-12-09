@@ -1,12 +1,17 @@
 let points = []
-const l = 300
-const s = 1
+let l = 300
+const s = 0.5
 const N = 50
 
 function setup() {
     var canvas = createCanvas(windowWidth, windowHeight * 0.5)
     canvas.parent('sketch')
+    l = Math.floor(width / 6)
     for(let i = 0; i < N; i++) points.push([createVector(random(width), random(height)), createVector(random(-s, s), random(-s, s))])
+    points.push([createVector(-l/2, 0), createVector(0, 1)])
+    points.push([createVector(-l/2, height), createVector(0, -1)])
+    points.push([createVector(width + l/2, 0), createVector(0, 1)])
+    points.push([createVector(width + l/2, height), createVector(0, -1)])
 }
 
 function draw() {

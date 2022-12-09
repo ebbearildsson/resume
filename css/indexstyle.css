@@ -18,14 +18,14 @@ body {
 .list>a {
   text-decoration: none;
   color: #212121;
-  font-size: 2em;
+  font-size: 5vw;
   position: relative;
 }
 
 .list>a:hover::before {
   position: absolute;
   content:'[';
-  left: -1rem;
+  left: -3vw;
 }
 
 .list>a:hover::after {
@@ -34,7 +34,7 @@ body {
 
 .typed {
   margin-left: 5vw;
-  font-size: 4em;
+  font-size: 6vw;
 	width: 14ch;
 	white-space: nowrap;
 	overflow: hidden;
@@ -67,4 +67,18 @@ body {
   position: absolute;
   top: 50vh;
   height: 50vh;
+}
+
+/* change font size when in landscape mode */
+@media screen and (orientation: landscape) {
+  .typed {
+    font-size: 3vw;
+  }
+  .list>a {
+    font-size: 2.5vw;
+  }
+
+  .list>a:hover::before {
+    left: -1.5vw;
+  }
 }
