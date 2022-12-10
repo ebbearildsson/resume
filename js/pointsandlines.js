@@ -8,12 +8,12 @@ function setup() {
     var canvas = createCanvas(windowWidth, windowHeight * 0.5)
     canvas.parent('sketch')
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        bg = 0
-        stroke(255)
+        bg = color(8, 8, 8)
+        stroke(250, 250, 250)
     } 
     else {
-        bg = 255
-        stroke(0)
+        bg = color(250, 250, 250)
+        stroke(8, 8, 8)
     }
 
     l = Math.floor(width / 6)

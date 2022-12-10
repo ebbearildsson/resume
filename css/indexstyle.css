@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
 
 :root{
-  --background: #fff;
-  --text: #000;
+  --background: #fafafa;
+  --text: #080808;
 }
 
 body {
@@ -23,6 +23,7 @@ body {
 
 .list>a {
   text-decoration: none;
+  width: fit-content;
   color: var(--text);
   font-size: 5vw;
   position: relative;
@@ -107,7 +108,7 @@ body {
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --background: #000;
-    --text: #fff;
+    --background: #080808;
+    --text: #fafafa;
   }
 }
