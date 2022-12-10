@@ -1,20 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
-
-:root{
-  --background: #fafafa;
-  --text: #080808;
-}
-
-body {
-  background-color: var(--background);
-  font-family: 'Fira Code', monospace;
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 .list {
   margin-left: 5vw;
   display: flex;
@@ -32,7 +15,7 @@ body {
 .list>a:hover::before {
   position: absolute;
   content:'[';
-  left: -3vw;
+  left: -1ch;
 }
 
 .list>a:hover::after {
@@ -103,12 +86,5 @@ body {
 
   .list>a:hover::before {
     left: -1.5vw;
-  }
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  :root {
-    --background: #080808;
-    --text: #fafafa;
   }
 }
