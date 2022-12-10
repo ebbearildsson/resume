@@ -33,6 +33,7 @@ body {
 }
 
 .typed {
+  margin-top: 10vh;
   margin-left: 5vw;
   font-size: 6vw;
 	width: 14ch;
