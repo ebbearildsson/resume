@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
 
+:root{
+  --background: #fff;
+  --text: #000;
+}
+
 body {
+  background-color: var(--background);
   font-family: 'Fira Code', monospace;
   height: 100vh;
   width: 100vw;
@@ -17,7 +23,7 @@ body {
 
 .list>a {
   text-decoration: none;
-  color: #212121;
+  color: var(--text);
   font-size: 5vw;
   position: relative;
 }
@@ -33,28 +39,29 @@ body {
 }
 
 .typed {
+  color: var(--text);
   margin-top: 10vh;
   margin-left: 5vw;
   font-size: 6vw;
 	width: 14ch;
 	white-space: nowrap;
 	overflow: hidden;
-	border-right: 4px solid #fff;
+	border-right: 4px solid var(--text);
 	animation: 
     cursor 500ms step-start infinite, 
-    text 8s steps(14) infinite,
-    selection 8s steps(1) infinite;
+    text 6s steps(14) infinite,
+    selection 6s steps(1) infinite;
 }
 
 @keyframes cursor {
 	0% {
-    border-color: #212121;
+    border-color: var(--text);
   }
   50% {
     border-color: transparent;
   }
   100% { 
-    border-color: #212121; 
+    border-color: var(--text); 
   }
 }
 
@@ -72,7 +79,7 @@ body {
 
 @keyframes selection {
   0% {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: var(--background);
   }
   90% {
     background-color: #3ba7ff62;
@@ -95,5 +102,12 @@ body {
 
   .list>a:hover::before {
     left: -1.5vw;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --background: #000;
+    --text: #fff;
   }
 }
