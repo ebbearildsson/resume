@@ -6,25 +6,26 @@ body {
 }
 
 .item {
-    width: 100%;
+    width: 60vw;
+    border-radius: 2vw;
+    background-color: var(--off-background);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .item>a {
+    margin-left: 3vw;
+    background-color: var(--off-background);
     font-size: 2vw;
-    text-decoration: none;
     width: 40vw;
-    position: relative;
 }
 
-.item>a:hover::before {
-    position: absolute;
-    content:'[';
-    left: -1ch;
-  }
-  
-  .item>a:hover::after {
-    content:']';
-  }
+.item>img {
+    background-color: var(--off-background);
+    width: 10vw;
+    height: 10vw;
+    margin-right: 0vw;
+    border-radius: 2vw;
+}

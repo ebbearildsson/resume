@@ -2,27 +2,54 @@
 
 :root{
   --background: #fafafa;
+  --off-background: #e0e0e0;
   --text: #080808;
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    :root {
-      --background: #080808;
-      --text: #fafafa;
-    }
+  :root {
+    --background: #080808;
+    --off-background: #212121;
+    --text: #fafafa;
+  }
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: 'Fira Code', monospace;
-    background-color: var(--background);
-    color: var(--text);
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Fira Code', monospace;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#back-button {
+  position: absolute;
+  top: 5vw;
+  left: 5vw;
+  width: 5vw;
+  height: 5vw;
+  background-color: var(--background);
+  z-index: 999;
+}
+
+.selection {
+  text-decoration: none;
+  position: relative;
+}
+
+.selection:hover::before {
+  position: absolute;
+  content:'[';
+  left: -1ch;
+}
+
+.selection:hover::after {
+  content:']';
 }
