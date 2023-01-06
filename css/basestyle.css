@@ -30,11 +30,12 @@ body {
 }
 
 #back-button {
-  position: absolute;
+  position: relative;
   top: 5vw;
   left: 5vw;
   width: 5vw;
   height: 5vw;
+  font-size: 2vw;
   background-color: var(--background);
   z-index: 999;
 }
