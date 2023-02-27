@@ -30,7 +30,7 @@ body {
 }
 
 #back-button {
-  position: relative;
+  position: absolute;
   top: 5vw;
   left: 5vw;
   width: 5vw;
